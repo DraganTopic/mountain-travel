@@ -79,6 +79,12 @@ section p {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    section {
+        padding: 50px 20px;
+    }
+}
+
 
  header {
      display: flex;
@@ -109,6 +115,18 @@ section p {
 
  header nav li {
     margin: 0 15px; 
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+
 }
 
 /* Hero Styles */
@@ -159,6 +177,24 @@ section p {
     }
 }
 
+@media (max-width: 800px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h3 {
+        font-size: 24px;
+    }
+
+    .hero a.btn {
+        padding: 15px 40px;
+    }
+}
+
 /* Destinations Section */
 
 .destinations .grid li {
@@ -177,7 +213,21 @@ section p {
     flex-basis: 70%;
 }
 
-/* Destinations Section */
+@media (max-width: 1100px) {
+    .destinations .grid li.small,
+    .destinations .grid li.large {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .destinations .grid li.small,
+    .destinations .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+/* Packages Section */
 
 .packages .grid li {
     padding: 50px;
@@ -194,6 +244,13 @@ section p {
     margin: 25px 0;
 }
 
+@media (max-width: 800px) {
+    .packages .grid li {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+}
+
 /* Testimonials Section */
 
 .testimonials .quote {
@@ -201,6 +258,18 @@ section p {
     font-weight: 300;
     line-height: 1.5;
     margin: 40px 0 25px;
+}
+
+@media (max-width: 800px) {
+    .testimonials .quote {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .testimonials .author {
+        font-size: 14px;
+    }
+
 }
 
 /* Contact Section */
@@ -225,7 +294,15 @@ section p {
     flex: 1;
 }
 
-/* Contact Section */
+@media (max-width: 1000px) {
+    .contact form input {
+        padding: 15px;
+        margin: 0 0 20px 0;
+        flex-basis: 100%;
+    }
+}
+
+/* Footer Section */
 
 footer {
     display: flex;
@@ -249,4 +326,19 @@ footer p {
     font-size: 14px;
     opacity: .6;
     align-self: center;
+}
+
+@media (max-witdh: 1100px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer ul li {
+        margin: 0 8px;
+    }
 }
